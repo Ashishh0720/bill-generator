@@ -1,0 +1,64 @@
+/* start style coding */
+
+body {
+  background-color: cadetblue;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.width {
+  width: 28%;
+}
+
+.margin_left_20px {
+  margin-left: 20px;
+}
+
+.color_blue {
+  color: white;
+  background-color: rebeccapurple;
+}
+
+select,
+input {
+  padding: 5px;
+}
+
+#quantity {
+  margin-left: 36px;
+}
+
+#bill_input_cont label {
+  color: blue;
+  margin-left: 20px;
+  float: left;
+}
+
+#add {
+  padding: 10px;
+  width: 180px;
+  margin-left: 70px;
+  margin-top: 20px;
+  background-color: brown;
+  color: white;
+}
+
+#output {
+  margin-top: 20px;
+}
+
+td {
+  padding: 10px;
+  padding-left: 42px;
+  padding-right: 40px;
+}
+
+/* end style coding */
+
+/* bill input container code */

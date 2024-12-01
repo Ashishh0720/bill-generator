@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div>
+        <h1 class="align-center"> Sarala Birla University cafe </h1>
+    </div>
+
+    <div id="section-cont">
+        <div class="border width" id="bill_input_cont">
+            <form>
+                <label for="item" class="margin_left_20px">
+                    Select Item :-
+                    <select name="Select Item" id="item" class="margin_left_20px">
+                        <option value="">Select item
+                        </option>
+                        <option value="Idli" name="idli">Idli</option>
+                        <option value="Dosa" name="dosa">Dosa</option>
+                        <option value="Burger" name="burger">Burger</option>
+                        <option value="Veg - Noodles" name="vegnoodles">Veg - Noodles</option>
+                        <option value="Chai" name="chai">Chai</option>
+                        <option value="Samosa" name="samosa">Samosa</option>
+                    </select>
+                </label>
+                <br>
+                <br>
+
+                <label for="Quantity">
+                    Quantity :-
+                    <input type="number" name="quantity" id="quantity">
+                </label> <br><br>
+
+                <input type="submit" value="ADD" id="add">
+            </form>
+        </div>
+
+        <div id="output">
+            <table id="menu" border="1">
+                <tr class="color_blue">
+                    <td>Item</td>
+                    <td>Quantity</td>
+                    <td>Total (Rs.) </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
