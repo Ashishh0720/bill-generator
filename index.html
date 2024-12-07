@@ -4,52 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sarala Birla University Cafe</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-
 </head>
 
 <body>
     <div>
-        <h1 class="align-center"> Sarala Birla University cafe </h1>
+        <h1 class="align-center">Sarala Birla University Cafe</h1>
     </div>
 
     <div id="section-cont">
+        <!-- Input Form -->
         <div class="border width" id="bill_input_cont">
             <form>
                 <label for="item" class="margin_left_20px">
-                    Select Item :-
-                    <select name="Select Item" id="item" class="margin_left_20px">
-                        <option value="">Select item
-                        </option>
-                        <option value="Idli" name="idli">Idli</option>
-                        <option value="Dosa" name="dosa">Dosa</option>
-                        <option value="Burger" name="burger">Burger</option>
-                        <option value="Veg - Noodles" name="vegnoodles">Veg - Noodles</option>
-                        <option value="Chai" name="chai">Chai</option>
-                        <option value="Samosa" name="samosa">Samosa</option>
+                    Select Item:
+                    <select name="item" id="item" class="margin_left_20px">
+                        <option value="">Select item</option>
+                        <option value="Idli">Idli</option>
+                        <option value="Dosa">Dosa</option>
+                        <option value="Burger">Burger</option>
+                        <option value="Veg - Noodles">Veg - Noodles</option>
+                        <option value="Chai">Chai</option>
+                        <option value="Samosa">Samosa</option>
                     </select>
                 </label>
-                <br>
-                <br>
+                <br><br>
 
-                <label for="Quantity">
-                    Quantity :-
-                    <input type="number" name="quantity" id="quantity">
-                </label> <br><br>
+                <label for="quantity">
+                    Quantity:
+                    <input type="number" name="quantity" id="quantity" min="1" placeholder="Enter quantity">
+                </label>
+                <br><br>
 
                 <input type="submit" value="ADD" id="add">
             </form>
+
+            <!-- Error Message -->
+            <div id="error-message" style="color: red; margin-top: 10px;"></div>
         </div>
 
+        <!-- Output Table -->
         <div id="output">
-            <table id="menu" border="1">
-                <tr class="color_blue">
-                    <td>Item</td>
-                    <td>Quantity</td>
-                    <td>Total (Rs.) </td>
-                </tr>
+            <table id="menu" border="1" style="width: 100%; text-align: left;">
+                <thead>
+                    <tr class="color_blue">
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Total (Rs.)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows will be appended here -->
+                </tbody>
             </table>
+
+            <!-- Grand Total Display -->
+            <h3 id="grand-total" style="margin-top: 20px; font-weight: bold; color: green;">Grand Total: Rs. 0</h3>
+
         </div>
     </div>
 
